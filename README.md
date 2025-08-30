@@ -87,6 +87,7 @@ printf("%d ",matriz[i][j]);
 0 0 1 0 0
 
 
+saída: <img width="1782" height="1225" alt="image" src="https://github.com/user-attachments/assets/5ac6ef69-322a-474a-b426-0fd4f1dfcfb9" />
 
 
 
