@@ -1,0 +1,42 @@
+// Desafio Batalha Naval - Nível Aventureiro
+// Autor: Seu Nome
+// Objetivo: Posicionar quatro navios (horizontal, vertical, duas diagonais) e exibir o tabuleiro completo
+// Teste online em Programiz : https://www.programiz.com/c-programming/online-compiler
+
+#include <stdio.h>
+
+int main() {
+    // Tabuleiro 10x10
+    int tabuleiro[10][10] = {0};
+
+    // Posiciona navio horizontal (tamanho 4) na linha 1, colunas 2 a 5
+    for (int j = 2; j <= 5; j++) {
+        tabuleiro[1][j] = 3;
+    }
+
+    // Posiciona navio vertical (tamanho 4) na coluna 7, linhas 3 a 6
+    for (int i = 3; i <= 6; i++) {
+        tabuleiro[i][7] = 3;
+    }
+
+    // Posiciona navio diagonal principal (tamanho 4) nas coordenadas (0,0), (1,1), (2,2), (3,3)
+    for (int i = 0; i < 4; i++) {
+        tabuleiro[i][i] = 3;
+    }
+
+    // Posiciona navio diagonal secundária (tamanho 4) nas coordenadas (0,9), (1,8), (2,7), (3,6)
+    for (int i = 0; i < 4; i++) {
+        tabuleiro[i][9 - i] = 3;
+    }
+
+    // Exibe o tabuleiro completo
+    printf("Tabuleiro 10x10:\n\n");
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {
+            printf("%d ", tabuleiro[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
