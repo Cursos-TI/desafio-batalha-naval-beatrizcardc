@@ -1,0 +1,47 @@
+// Desafio Batalha Naval - Nível Mestre
+// Autor: Beatriz Cardoso Cunha
+// Objetivo: Representar habilidades especiais (cone, cruz, octaedro) com matrizes e exibir áreas afetadas
+// Testado online com Programiz
+
+#include <stdio.h>
+
+int main() {
+    // MATRIZ DE HABILIDADE: CONE (entrada manual)
+    int cone[3][5] = {
+        {0, 0, 1, 0, 0},
+        {0, 1, 1, 1, 0},
+        {1, 1, 1, 1, 1}
+    };
+
+    // MATRIZ DE HABILIDADE: OCTAEDRO (entrada manual)
+    int octaedro[3][5] = {
+        {0, 0, 1, 0, 0},
+        {0, 1, 1, 1, 0},
+        {0, 0, 1, 0, 0}
+    };
+
+    // MATRIZ DE HABILIDADE: CRUZ (entrada manual)
+    int cruz[3][5] = {
+        {0, 0, 1, 0, 0},
+        {1, 1, 1, 1, 1},
+        {0, 0, 1, 0, 0}
+    };
+
+    // Função genérica para imprimir qualquer matriz 3x5
+    void imprimirHabilidade(char* nome, int matriz[3][5]) {
+        printf("\nPadrão de habilidade: %s\n", nome);
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 5; j++) {
+                printf("%d ", matriz[i][j]);
+            }
+            printf("\n");
+        }
+    }
+
+    // Imprime as três habilidades
+    imprimirHabilidade("Cone", cone);
+    imprimirHabilidade("Octaedro", octaedro);
+    imprimirHabilidade("Cruz", cruz);
+
+    return 0;
+}
