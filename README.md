@@ -22,6 +22,9 @@ Neste nível inicial, você implementará a lógica básica de posicionamento de
 
 ---
 
+Saída: <img width="542" height="430" alt="image" src="https://github.com/user-attachments/assets/f1235782-dcdd-4180-80b1-8010f7297853" />
+
+
 ## 🏅 Nível Aventureiro
 
 No nível Aventureiro, você expandirá o tabuleiro e adicionará mais navios, incluindo posicionamentos na diagonal.
