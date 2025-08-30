@@ -1,7 +1,7 @@
 // Desafio Batalha Naval - Nível Mestre
 // Autor: Beatriz Cardoso Cunha
 // Objetivo: Representar habilidades especiais (cone, cruz, octaedro) com matrizes e exibir áreas afetadas
-// Testado online com Programiz
+// Testado online com Programiz : https://www.programiz.com/c-programming/online-compiler
 
 #include <stdio.h>
 
