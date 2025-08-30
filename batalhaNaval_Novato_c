@@ -1,0 +1,51 @@
+// Desafio Batalha Naval - Nível Novato
+// Autor: Beatriz Cardoso Cunha
+// Objetivo: Posicionar dois navios (um vertical e um horizontal) e exibir as coordenadas
+// Requisito para uso no VSCODE: Instalação do pacote C/C++ Extension Pack e VSCode C/C++ Runner
+// Para teste rápido online: Programiz C Online Compiler link: https://www.programiz.com/c-programming/online-compiler/
+
+
+#include <stdio.h>
+
+int main() {
+    // Tabuleiro 5x5
+    int tabuleiro[5][5] = {0};
+
+    // Coordenadas iniciais
+    int x1 = 0, y1 = 2; // navio horizontal
+    int x2 = 1, y2 = 0; // navio vertical
+
+    // Posiciona navio horizontal (tamanho 3)
+    for (int i = 0; i < 3; i++) {
+        tabuleiro[x1][y1 + i] = 1;
+    }
+
+    // Posiciona navio vertical (tamanho 3)
+    for (int i = 0; i < 3; i++) {
+        tabuleiro[x2 + i][y2] = 2;
+    }
+
+    // Exibe coordenadas do navio horizontal
+    printf("Coordenadas do navio horizontal (valor 1):\n");
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            if (tabuleiro[i][j] == 1) {
+                printf("(%d, %d)\n", i, j);
+            }
+        }
+    }
+
+    // Exibe coordenadas do navio vertical
+    printf("\nCoordenadas do navio vertical (valor 2):\n");
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            if (tabuleiro[i][j] == 2) {
+                printf("(%d, %d)\n", i, j);
+            }
+        }
+    }
+
+    return 0;
+}
+    return 0;
+}
