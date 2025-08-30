@@ -41,6 +41,9 @@ No nível Aventureiro, você expandirá o tabuleiro e adicionará mais navios, i
 
 ---
 
+Saída: <img width="1756" height="1233" alt="image" src="https://github.com/user-attachments/assets/ac2c8c0b-6fe1-4381-9bfa-6768d2218944" />
+
+
 ## 🏅 Nível Mestre
 
 No nível Mestre, o desafio se intensifica com a implementação de habilidades especiais representadas por matrizes específicas no tabuleiro.
